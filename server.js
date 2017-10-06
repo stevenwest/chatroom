@@ -11,10 +11,10 @@ function send404(res) {
 }
 
 function sendFile(res, filePath, fileContents) {
-    respnose.writeHead(200, {
+    res.writeHead(200, {
       "Content-Type": mime.lookup(path.basename(filePath))
     });
-    response.end(fileContents);
+    res.end(fileContents);
 }
 
 function serveStatic(res, chache, absPath) {
