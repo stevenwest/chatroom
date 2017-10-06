@@ -39,7 +39,7 @@ function serveStatic(res, chache, absPath) {
 }
 
 var server = http.createServer(function(req, res) {
-  var filePath= false;
+  var filePath = false;
   if (req.url == '/') {
     filePath = 'public/index.html';
   } else {
